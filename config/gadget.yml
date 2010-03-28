@@ -1,0 +1,5 @@
+twitterBox:
+  caption:
+    ja_JP: 'HelloWorldガジェット'
+  component: [twitter, twitter]
+
