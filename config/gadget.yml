@@ -1,5 +1,5 @@
 twitterBox:
   caption:
-    ja_JP: 'HelloWorldガジェット'
+    ja_JP: 'Twitter風ガジェット'
   component: [twitter, twitter]
 

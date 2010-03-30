@@ -1,7 +1,4 @@
 <?php
-class TwitterComponents extends sfComponents
+class TwitterComponents extends opTwitterComponents
 {
-  public function executeTwitter(sfWebRequest $request)
-  {
-  }
 }

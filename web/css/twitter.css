@@ -1,0 +1,19 @@
+div.twitter, div.twitter form {
+  overflow: auto;
+}
+
+div.twitter span#count {
+  float: right;
+  color: #cccccc;
+  font-size: 20px;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+div.twitter textarea#tweet_body {
+  width: 99%;
+  height: 2.5em;
+}
+
+div.twitter input {
+  float: right;
+}
