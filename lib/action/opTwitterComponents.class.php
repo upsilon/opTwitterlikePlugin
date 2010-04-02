@@ -8,7 +8,6 @@ class opTwitterComponents extends sfComponents
       ->getFriendActivityListPager(null)
       ->getQuery()
       ->andWhere('source = \'opTwitterlikePlugin\'')
-//      ->limit($this->gadget->getConfig('row'))
       ->execute();
     $this->form = new opTweetForm();
   }

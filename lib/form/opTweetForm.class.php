@@ -6,6 +6,11 @@ class opTweetForm extends sfForm
   {
     $this->setWidget('body', new sfWidgetFormTextarea());
     $this->setValidator('body', new opValidatorString(array('max_length' => 140, 'required' => true, 'trim' => true)));
+
+    $this->setWidget('twitter', new sfWidgetFormInputCheckbox());
+    $this->setValidator('twitter', new sfValidatorBoolean());
+    $this->widgetSchema->setLabel('twitter', 'Twitterにも送信する');
+
     $this->widgetSchema->setNameFormat('tweet[%s]');
   }
 
@@ -14,6 +19,6 @@ class opTweetForm extends sfForm
     $memberId = sfContext::getInstance()->getUser()->getMemberId();
     $body = $this->getValue('body');
 
-    Doctrine::getTable('ActivityData')->updateActivity($memberId, $body, array('source' => 'opTwitterlikePlugin'));
+    return Doctrine::getTable('ActivityData')->updateActivity($memberId, $body, array('source' => 'opTwitterlikePlugin'));
   }
 }

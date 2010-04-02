@@ -1,0 +1,4 @@
+all:
+  twitter_consumer_key: '*****' # Consumer key
+  twitter_consumer_secret: '*****' # Consumer secret
+

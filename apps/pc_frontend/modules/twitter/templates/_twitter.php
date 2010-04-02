@@ -9,6 +9,7 @@
 <?php echo $form->renderHiddenFields() ?>
 <?php echo $form['body'] ?>
 <input type="submit" id="submit" value="送信" />
+<?php echo $form['twitter'].$form['twitter']->renderLabel() ?>
 </form>
 
 <ol id="timeline" class="activities">

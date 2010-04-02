@@ -14,6 +14,6 @@ div.twitter textarea#tweet_body {
   height: 2.5em;
 }
 
-div.twitter input {
+div.twitter input#submit {
   float: right;
 }
