@@ -1,0 +1,21 @@
+このプラグインを使用するためには、https://twitter.com/apps/new で登録したアプリ
+の"Consumer key"と"Consumer secret"を設定する必要があります。
+
+ $ cp config/app.yml{.sample,}
+ $ vi config/app.yml
+
+app.ymlの"twitter_consumer_key"と"twitter_consumer_secret"にそれぞれ値を設定して
+保存します。
+app.ymlを修正したらOpenPNE3を設置したディレクトリで
+
+ $ ./symfony cc
+
+を実行してください。
+
+
+このプラグインは以下のライブラリを同梱しています。
+  TwitterOAuth:
+    MIT License
+    Copyright (c) 2009 Abraham Williams
+    http://github.com/abraham/twitteroauth
+
