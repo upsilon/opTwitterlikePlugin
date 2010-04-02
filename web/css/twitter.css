@@ -5,8 +5,15 @@ div.twitter, div.twitter form {
 div.twitter span#count {
   float: right;
   color: #cccccc;
-  font-size: 20px;
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+div.twitter span#count_num {
+  font-size: 20px;
+}
+
+div.twitter span#count_plus {
+  font-size: 15px;
 }
 
 div.twitter textarea#tweet_body {

@@ -5,7 +5,10 @@
 <?php slot('body') ?>
 <div class="twitter">
 <form method="post" action="<?php echo url_for('@twitter_post') ?>">
-<span id="count">140</span>
+<span id="count">
+<span id="count_num">140</span>
+<span id="count_plus" title="もう少し入力できます"></span>
+</span>
 <?php echo $form->renderHiddenFields() ?>
 <?php echo $form['body'] ?>
 <input type="submit" id="submit" value="送信" />
