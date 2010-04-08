@@ -1,4 +1,6 @@
 all:
   twitter_consumer_key: '*****' # Consumer key
   twitter_consumer_secret: '*****' # Consumer secret
+  bitly_login: '*****'
+  bitly_apikey: '*****'
 

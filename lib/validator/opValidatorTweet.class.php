@@ -32,8 +32,8 @@ class opValidatorTweet extends opValidatorString
   {
     $longUrl = $matches[0];
     $url = 'http://api.bit.ly/v3/shorten'
-         . '?login=upsilon'
-         . '&apiKey=R_e227b5e19ad3a778f88902763da0d344'
+         . '?login='.sfConfig::get('app_bitly_login')
+         . '&apiKey='.sfConfig::get('app_bitly_apikey')
          . '&uri='.urlencode($longUrl)
          . '&format=txt';
 
